@@ -16,6 +16,7 @@
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": false,
     "strictNullChecks": false,
+    "ignoreDeprecations": "6.0",
     "baseUrl": ".",
     "lib": ["esnext", "DOM"]
   },
