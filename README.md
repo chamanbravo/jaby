@@ -5,14 +5,14 @@ A Redis-backed job queue for Node.js. Like BullMQ, but smaller and lighter.
 ## Install
 
 ```bash
-npm install jaby
+npm install @chamanbravo/jaby
 ```
 
 ## Usage
 
 ```ts
 import Redis from "ioredis";
-import { Queue, Worker } from "jaby";
+import { Queue, Worker } from "@chamanbravo/jaby";
 
 const client = new Redis();
 
