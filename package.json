@@ -1,17 +1,35 @@
 {
   "name": "@chamanbravo/jaby",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Redis-backed job queue for Node.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "queue",
+    "job",
+    "worker",
+    "redis",
+    "background-jobs",
+    "delayed-jobs"
+  ],
+  "author": "chamanbravo",
   "license": "ISC",
-  "type": "module",
   "devDependencies": {
     "@types/node": "^25.6.2",
     "tsx": "^4.21.0",
